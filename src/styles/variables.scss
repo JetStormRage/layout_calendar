@@ -1,0 +1,15 @@
+$cell-size: 100px;
+$cell-background: white;
+$cell-margin: 1px;
+$date-font-family: "Arial", sans-serif;
+$date-font-size: 30px;
+$transition: 0.5s;
+
+$days: (
+  "tue": 1,
+  "wed": 2,
+  "thu": 3,
+  "fri": 4,
+  "sat": 5,
+  "sun": 6,
+);
