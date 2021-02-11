@@ -13,8 +13,9 @@ body {
   height: 45em;
 }
 
-div {
+.calendar > div {
   transition: $transition;
+  @include one-cell;
 }
 
 .calendar {
@@ -31,8 +32,8 @@ div {
 @for $x from 28 through 31 {
   .calendar-#{$x} {
     @for $y from 1 through $x {
-      & :nth-child(#{$y}) {
-        @include one-cell;
+      div:nth-child(#{$y}) {
+        display: flex;
       }
 
       & :nth-child(#{$y})::after {
